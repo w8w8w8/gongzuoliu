@@ -15,4 +15,4 @@
 * 在对结点、连线、分组区域的各种编辑操作，如新增/删除/修改名称/重设样式或大小/移动/标注时，均可捕捉到事件，并触发自定义事件，如果自定义事件执行的方法返回FALSE，则会阻止操作。
 * 具有操作事务序列控制功能，在工作区内的各种有效操作都能记录到一个栈中，然后可以进行撤销（undo()）或重做（redo()），像典型的C/S软件一样。
 
-![Preview Image](http://git.oschina.net/foolegg126/gooflow/blob/master/aaa.png?dir=0&filepath=aaa.png&oid=78cfc5fc8ea700c9f0f3b7a0e046ad44b4cfabca&sha=a4290bd7b0947828bc091ae720d21aa04fc97e34 "效果预览图")
+![Preview Image](https://git.oschina.net/uploads/images/2017/0531/145320_f0bb8c2c_472359.png "效果预览图")
