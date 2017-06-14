@@ -984,13 +984,8 @@ GooFlow.prototype={
 			if(jq.prop("tagName")=="DIV"){
 				if(this.onItemBlur!=null&&!this.onItemBlur(this.$focus,"node"))	return false;
 				jq.removeClass("item_focus").children("div:eq(0)").css("display","none");
-				if(GooFlow.prototype.color.line){
-//          if(this.$nodeData[this.$focus].marked){
-//            jq.css("border-color",GooFlow.prototype.color.mark||"#ff8800");
-//          }
-//          else{
-//            jq.css("border-color",GooFlow.prototype.color.node||"#A1DCEB");
-//          }
+				if(this.$nodeData[this.$focus].marked){
+					jq.addClass("item_mark").css("border-color",GooFlow.prototype.color.mark||'#ff8800');
 				}
 			}
 			else{
