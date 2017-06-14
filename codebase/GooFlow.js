@@ -1,4 +1,4 @@
-﻿//定义一个区域图类：
+//定义一个区域图类：
 function GooFlow(bgDiv,property){
 	if (navigator.userAgent.indexOf("MSIE 8.0")>0||navigator.userAgent.indexOf("MSIE 7.0")>0||navigator.userAgent.indexOf("MSIE 6.0")>0)
 		GooFlow.prototype.useSVG="";
@@ -1953,15 +1953,15 @@ GooFlow.prototype={
 			this.$lineData[id].marked=mark||false;
 			if(GooFlow.prototype.useSVG!=""){
 				if(mark){
-					this.$nodeDom[id].childNodes[1].setAttribute("stroke",GooFlow.prototype.color.mark||"#ff8800");
-					this.$nodeDom[id].childNodes[1].setAttribute("marker-end","url(#arrow2)");
+					this.$lineDom[id].childNodes[1].setAttribute("stroke",GooFlow.prototype.color.mark||"#ff8800");
+					this.$lineDom[id].childNodes[1].setAttribute("marker-end","url(#arrow2)");
 				}else{
-					this.$nodeDom[id].childNodes[1].setAttribute("stroke",GooFlow.prototype.color.line||"#3892D3");
-					this.$nodeDom[id].childNodes[1].setAttribute("marker-end","url(#arrow1)");
+					this.$lineDom[id].childNodes[1].setAttribute("stroke",GooFlow.prototype.color.line||"#3892D3");
+					this.$lineDom[id].childNodes[1].setAttribute("marker-end","url(#arrow1)");
 				}
 			}else{
-				if(mark)	this.$nodeDom[id].strokeColor=GooFlow.prototype.color.mark||"#ff8800";
-				else	this.$nodeDom[id].strokeColor=GooFlow.prototype.color.line||"#3892D3"
+				if(mark)	this.$lineDom[id].strokeColor=GooFlow.prototype.color.mark||"#ff8800";
+				else	this.$lineDom[id].strokeColor=GooFlow.prototype.color.line||"#3892D3"
 			}
 		}
 		if(this.$undoStatck){
