@@ -1939,12 +1939,11 @@ GooFlow.prototype={
 			if(this.onItemMark!=null&&!this.onItemMark(id,"node",mark))	return;
 			this.$nodeData[id].marked=mark||false;
 			if(mark){
-				this.$nodeDom[id].addClass("item_mark");
-        jq.css("border-color",GooFlow.prototype.color.mark);
+				this.$nodeDom[id].addClass("item_mark").css("border-color",GooFlow.prototype.color.mark);
 			}
 			else{
 				this.$nodeDom[id].removeClass("item_mark");
-				if(id!=this.$focus) jq.css("border-color","transparent");
+				if(id!=this.$focus) this.$nodeDom[id].css("border-color","transparent");
 			}
 			
 		}else if(type=="line"){
